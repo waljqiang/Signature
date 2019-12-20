@@ -42,7 +42,7 @@ class Signature{
      * @param $cipherText string 密文
      * @return string 明文
      */
-    public static function decrypto($cipherText){echo 11;
+    public static function decrypto($cipherText){
         try {
             $key = self::loadEncryptionKeyFromConfig();
             $secret_data = Crypto::decrypt($cipherText, $key);
